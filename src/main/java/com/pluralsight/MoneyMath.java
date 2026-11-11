@@ -4,10 +4,10 @@ import java.math.BigDecimal;
 
 public class MoneyMath {
     public static void main(String[] args) {
-        float num1 = 0f;
-        double num2 = 0;
+        float num1 = 0.0f;
+        double num2 = 0.0;
         BigDecimal num3 = BigDecimal.ZERO;
-        for (int i = 0; i < 11 ; i++) {
+        for (int i = 0; i < 10 ; i++) {
             num1 = num1 + 0.10f;
             num2 = num2 + 0.10;
             num3 = num3.add( new BigDecimal("0.10"));
@@ -22,7 +22,7 @@ public class MoneyMath {
         num2 = 0;
         num1 = 0f;
 
-        for (int i = 0; i < 1001 ; i++) {
+        for (int i = 0; i < 1000 ; i++) {
             num1 = num1 + 19.99f;
             num2 = num2 + 19.99;
             num3 = num3.add( new BigDecimal("19.99"));
